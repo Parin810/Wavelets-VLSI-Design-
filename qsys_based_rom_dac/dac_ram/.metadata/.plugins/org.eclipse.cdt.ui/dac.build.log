@@ -1,0 +1,6 @@
+18:34:35 **** Clean-only build of configuration Nios II for project dac ****
+make clean 
+[dac clean complete]
+
+18:34:36 Build Finished (took 437ms)
+

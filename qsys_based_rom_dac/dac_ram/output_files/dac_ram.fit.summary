@@ -1,0 +1,16 @@
+Fitter Status : Successful - Mon May 01 01:21:41 2017
+Quartus Prime Version : 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+Revision Name : dac_ram
+Top-level Entity Name : unsaved
+Family : Cyclone IV E
+Device : EP4CE22F17C6
+Timing Models : Final
+Total logic elements : 1,675 / 22,320 ( 8 % )
+    Total combinational functions : 1,573 / 22,320 ( 7 % )
+    Dedicated logic registers : 902 / 22,320 ( 4 % )
+Total registers : 902
+Total pins : 10 / 154 ( 6 % )
+Total virtual pins : 0
+Total memory bits : 273,408 / 608,256 ( 45 % )
+Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

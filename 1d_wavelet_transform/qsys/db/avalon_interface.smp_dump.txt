@@ -1,0 +1,15 @@
+
+State Machine - |unsaved|avalon_interface:wavelet_0|top:top_wavelet|control_fsm:fsm|present_state
+Name present_state.row_done present_state.compute present_state.idle 
+present_state.idle 0 0 0 
+present_state.compute 0 1 1 
+present_state.row_done 1 0 1 
+
+State Machine - |unsaved|unsaved_nios2_gen2_0:nios2_gen2_0|unsaved_nios2_gen2_0_cpu:cpu|unsaved_nios2_gen2_0_cpu_nios2_oci:the_unsaved_nios2_gen2_0_cpu_nios2_oci|unsaved_nios2_gen2_0_cpu_debug_slave_wrapper:the_unsaved_nios2_gen2_0_cpu_debug_slave_wrapper|unsaved_nios2_gen2_0_cpu_debug_slave_tck:the_unsaved_nios2_gen2_0_cpu_debug_slave_tck|DRsize
+Name DRsize.101 DRsize.100 DRsize.011 DRsize.010 DRsize.001 DRsize.000 
+DRsize.000 0 0 0 0 0 0 
+DRsize.001 0 0 0 0 1 1 
+DRsize.010 0 0 0 1 0 1 
+DRsize.011 0 0 1 0 0 1 
+DRsize.100 0 1 0 0 0 1 
+DRsize.101 1 0 0 0 0 1 

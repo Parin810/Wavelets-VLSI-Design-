@@ -1,0 +1,311 @@
+
+parin.elf:     file format elf32-littlenios2
+parin.elf
+architecture: nios2:r1, flags 0x00000112:
+EXEC_P, HAS_SYMS, D_PAGED
+start address 0x00008020
+
+Program Header:
+    LOAD off    0x00001000 vaddr 0x00008000 paddr 0x00008000 align 2**12
+         filesz 0x00000020 memsz 0x00000020 flags r-x
+    LOAD off    0x00001020 vaddr 0x00008020 paddr 0x00008020 align 2**12
+         filesz 0x00000244 memsz 0x00000244 flags r-x
+    LOAD off    0x00001264 vaddr 0x00008264 paddr 0x00008268 align 2**12
+         filesz 0x00000004 memsz 0x00000004 flags rw-
+    LOAD off    0x0000126c vaddr 0x0000826c paddr 0x0000826c align 2**12
+         filesz 0x00000000 memsz 0x0000000c flags rw-
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .entry        00000020  00008000  00008000  00001000  2**5
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .exceptions   00000000  00008020  00008020  00001268  2**0
+                  CONTENTS
+  2 .text         00000244  00008020  00008020  00001020  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  3 .rodata       00000000  00008264  0000826c  00001268  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  4 .rwdata       00000004  00008264  00008268  00001264  2**2
+                  CONTENTS, ALLOC, LOAD, DATA, SMALL_DATA
+  5 .bss          0000000c  0000826c  0000826c  0000126c  2**2
+                  ALLOC, SMALL_DATA
+  6 .onchip_memory2_0 00000000  00008278  00008278  00001268  2**0
+                  CONTENTS
+  7 .comment      00000023  00000000  00000000  00001268  2**0
+                  CONTENTS, READONLY
+  8 .debug_aranges 00000108  00000000  00000000  00001290  2**3
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_info   000007e8  00000000  00000000  00001398  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_abbrev 00000414  00000000  00000000  00001b80  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_line   0000043d  00000000  00000000  00001f94  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_frame  00000124  00000000  00000000  000023d4  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 13 .debug_str    00000433  00000000  00000000  000024f8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 14 .debug_loc    00000021  00000000  00000000  0000292b  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 15 .debug_alt_sim_info 00000010  00000000  00000000  0000294c  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 16 .debug_ranges 00000068  00000000  00000000  00002960  2**3
+                  CONTENTS, READONLY, DEBUGGING
+ 17 .thread_model 00000003  00000000  00000000  000035f4  2**0
+                  CONTENTS, READONLY
+ 18 .cpu          0000000c  00000000  00000000  000035f7  2**0
+                  CONTENTS, READONLY
+ 19 .qsys         00000001  00000000  00000000  00003603  2**0
+                  CONTENTS, READONLY
+ 20 .simulation_enabled 00000001  00000000  00000000  00003604  2**0
+                  CONTENTS, READONLY
+ 21 .stderr_dev   0000000b  00000000  00000000  00003605  2**0
+                  CONTENTS, READONLY
+ 22 .stdin_dev    0000000b  00000000  00000000  00003610  2**0
+                  CONTENTS, READONLY
+ 23 .stdout_dev   0000000b  00000000  00000000  0000361b  2**0
+                  CONTENTS, READONLY
+ 24 .sopc_system_name 00000007  00000000  00000000  00003626  2**0
+                  CONTENTS, READONLY
+ 25 .sopcinfo     000361f1  00000000  00000000  0000362d  2**0
+                  CONTENTS, READONLY
+SYMBOL TABLE:
+00008000 l    d  .entry	00000000 .entry
+00008020 l    d  .exceptions	00000000 .exceptions
+00008020 l    d  .text	00000000 .text
+00008264 l    d  .rodata	00000000 .rodata
+00008264 l    d  .rwdata	00000000 .rwdata
+0000826c l    d  .bss	00000000 .bss
+00008278 l    d  .onchip_memory2_0	00000000 .onchip_memory2_0
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_frame	00000000 .debug_frame
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    d  .debug_loc	00000000 .debug_loc
+00000000 l    d  .debug_alt_sim_info	00000000 .debug_alt_sim_info
+00000000 l    d  .debug_ranges	00000000 .debug_ranges
+00000000 l    df *ABS*	00000000 ../dac_bsp//obj/HAL/src/crt0.o
+00008058 l       .text	00000000 alt_after_alt_main
+00000000 l    df *ABS*	00000000 main.c
+00000000 l    df *ABS*	00000000 alt_load.c
+00000000 l    df *ABS*	00000000 alt_main.c
+00000000 l    df *ABS*	00000000 alt_sys_init.c
+00000000 l    df *ABS*	00000000 alt_dcache_flush_all.c
+00000000 l    df *ABS*	00000000 alt_icache_flush_all.c
+00000000 l    df *ABS*	00000000 altera_nios2_gen2_irq.c
+00008204 g     F .text	0000002c alt_main
+00008268 g       *ABS*	00000000 __flash_rwdata_start
+0000825c g     F .text	00000008 altera_nios2_gen2_irq_init
+00008000 g     F .entry	0000000c __reset
+00008020 g       *ABS*	00000000 __flash_exceptions_start
+00008270 g     O .bss	00000004 alt_argv
+00010264 g       *ABS*	00000000 _gp
+00008000 g       *ABS*	00000000 __alt_mem_onchip_memory2_0
+00008278 g       *ABS*	00000000 __bss_end
+00008254 g     F .text	00000004 alt_dcache_flush_all
+00008268 g       *ABS*	00000000 __ram_rwdata_end
+00008264 g       *ABS*	00000000 __ram_rodata_end
+00008264 g     O .rwdata	00000004 jtag_uart_0
+00008278 g       *ABS*	00000000 end
+00010000 g       *ABS*	00000000 __alt_stack_pointer
+00008020 g     F .text	0000003c _start
+00008250 g     F .text	00000004 alt_sys_init
+00008264 g       *ABS*	00000000 __ram_rwdata_start
+00008264 g       *ABS*	00000000 __ram_rodata_start
+00008278 g       *ABS*	00000000 __alt_stack_base
+0000826c g       *ABS*	00000000 __bss_start
+0000805c g     F .text	000000c8 main
+0000826c g     O .bss	00000004 alt_envp
+00008264 g       *ABS*	00000000 __flash_rodata_start
+00008230 g     F .text	00000020 alt_irq_init
+00008274 g     O .bss	00000004 alt_argc
+00008020 g       *ABS*	00000000 __ram_exceptions_start
+00008268 g       *ABS*	00000000 _edata
+00008278 g       *ABS*	00000000 _end
+00008020 g       *ABS*	00000000 __ram_exceptions_end
+00010000 g       *ABS*	00000000 __alt_data_end
+0000800c g       .entry	00000000 _exit
+00008258 g     F .text	00000004 alt_icache_flush_all
+00008124 g     F .text	000000e0 alt_load
+
+
+
+Disassembly of section .entry:
+
+00008000 <__reset>:
+    8000:	00400034 	movhi	at,0
+    8004:	08600814 	ori	at,at,32800
+    8008:	0800683a 	jmp	at
+
+0000800c <_exit>:
+	...
+
+Disassembly of section .text:
+
+00008020 <_start>:
+    8020:	06c00074 	movhi	sp,1
+    8024:	dec00014 	ori	sp,sp,0
+    8028:	06800074 	movhi	gp,1
+    802c:	d6809914 	ori	gp,gp,612
+    8030:	00800034 	movhi	r2,0
+    8034:	10a09b14 	ori	r2,r2,33388
+    8038:	00c00034 	movhi	r3,0
+    803c:	18e09e14 	ori	r3,r3,33400
+    8040:	10c00326 	beq	r2,r3,8050 <_start+0x30>
+    8044:	10000015 	stw	zero,0(r2)
+    8048:	10800104 	addi	r2,r2,4
+    804c:	10fffd36 	bltu	r2,r3,8044 <_gp+0xffff7de0>
+    8050:	00081240 	call	8124 <alt_load>
+    8054:	00082040 	call	8204 <alt_main>
+
+00008058 <alt_after_alt_main>:
+    8058:	003fff06 	br	8058 <_gp+0xffff7df4>
+
+0000805c <main>:
+    805c:	defff604 	addi	sp,sp,-40
+    8060:	df000915 	stw	fp,36(sp)
+    8064:	df000904 	addi	fp,sp,36
+    8068:	e03ffa15 	stw	zero,-24(fp)
+    806c:	00800284 	movi	r2,10
+    8070:	e0bffb15 	stw	r2,-20(fp)
+    8074:	e03ffc15 	stw	zero,-16(fp)
+    8078:	00800084 	movi	r2,2
+    807c:	e0bffd15 	stw	r2,-12(fp)
+    8080:	e0bffd17 	ldw	r2,-12(fp)
+    8084:	10800404 	addi	r2,r2,16
+    8088:	e0fffa17 	ldw	r3,-24(fp)
+    808c:	1886983a 	sll	r3,r3,r2
+    8090:	e0bffc17 	ldw	r2,-16(fp)
+    8094:	10800204 	addi	r2,r2,8
+    8098:	1884983a 	sll	r2,r3,r2
+    809c:	e0bffe15 	stw	r2,-8(fp)
+    80a0:	e03ff715 	stw	zero,-36(fp)
+    80a4:	e03ff815 	stw	zero,-32(fp)
+    80a8:	00001a06 	br	8114 <main+0xb8>
+    80ac:	e0fff717 	ldw	r3,-36(fp)
+    80b0:	00800074 	movhi	r2,1
+    80b4:	10840a04 	addi	r2,r2,4136
+    80b8:	10c00035 	stwio	r3,0(r2)
+    80bc:	00800074 	movhi	r2,1
+    80c0:	10840a04 	addi	r2,r2,4136
+    80c4:	10800037 	ldwio	r2,0(r2)
+    80c8:	e0bfff15 	stw	r2,-4(fp)
+    80cc:	e03ff915 	stw	zero,-28(fp)
+    80d0:	00000306 	br	80e0 <main+0x84>
+    80d4:	e0bff917 	ldw	r2,-28(fp)
+    80d8:	10800044 	addi	r2,r2,1
+    80dc:	e0bff915 	stw	r2,-28(fp)
+    80e0:	e0bff917 	ldw	r2,-28(fp)
+    80e4:	10800510 	cmplti	r2,r2,20
+    80e8:	103ffa1e 	bne	r2,zero,80d4 <_gp+0xffff7e70>
+    80ec:	e0ffff17 	ldw	r3,-4(fp)
+    80f0:	00800074 	movhi	r2,1
+    80f4:	10840004 	addi	r2,r2,4096
+    80f8:	10c00035 	stwio	r3,0(r2)
+    80fc:	e0bff717 	ldw	r2,-36(fp)
+    8100:	10800044 	addi	r2,r2,1
+    8104:	e0bff715 	stw	r2,-36(fp)
+    8108:	e0bff817 	ldw	r2,-32(fp)
+    810c:	10800044 	addi	r2,r2,1
+    8110:	e0bff815 	stw	r2,-32(fp)
+    8114:	e0bff817 	ldw	r2,-32(fp)
+    8118:	10800f90 	cmplti	r2,r2,62
+    811c:	103fe31e 	bne	r2,zero,80ac <_gp+0xffff7e48>
+    8120:	003fdf06 	br	80a0 <_gp+0xffff7e3c>
+
+00008124 <alt_load>:
+    8124:	deffff04 	addi	sp,sp,-4
+    8128:	01000074 	movhi	r4,1
+    812c:	01400074 	movhi	r5,1
+    8130:	dfc00015 	stw	ra,0(sp)
+    8134:	21209904 	addi	r4,r4,-32156
+    8138:	29609a04 	addi	r5,r5,-32152
+    813c:	2140061e 	bne	r4,r5,8158 <alt_load+0x34>
+    8140:	01000074 	movhi	r4,1
+    8144:	01400074 	movhi	r5,1
+    8148:	21200804 	addi	r4,r4,-32736
+    814c:	29600804 	addi	r5,r5,-32736
+    8150:	2140121e 	bne	r4,r5,819c <alt_load+0x78>
+    8154:	00000b06 	br	8184 <alt_load+0x60>
+    8158:	00c00074 	movhi	r3,1
+    815c:	18e09a04 	addi	r3,r3,-32152
+    8160:	1907c83a 	sub	r3,r3,r4
+    8164:	0005883a 	mov	r2,zero
+    8168:	10fff526 	beq	r2,r3,8140 <_gp+0xffff7edc>
+    816c:	114f883a 	add	r7,r2,r5
+    8170:	39c00017 	ldw	r7,0(r7)
+    8174:	110d883a 	add	r6,r2,r4
+    8178:	10800104 	addi	r2,r2,4
+    817c:	31c00015 	stw	r7,0(r6)
+    8180:	003ff906 	br	8168 <_gp+0xffff7f04>
+    8184:	01000074 	movhi	r4,1
+    8188:	01400074 	movhi	r5,1
+    818c:	21209904 	addi	r4,r4,-32156
+    8190:	29609904 	addi	r5,r5,-32156
+    8194:	2140101e 	bne	r4,r5,81d8 <alt_load+0xb4>
+    8198:	00000b06 	br	81c8 <alt_load+0xa4>
+    819c:	00c00074 	movhi	r3,1
+    81a0:	18e00804 	addi	r3,r3,-32736
+    81a4:	1907c83a 	sub	r3,r3,r4
+    81a8:	0005883a 	mov	r2,zero
+    81ac:	10fff526 	beq	r2,r3,8184 <_gp+0xffff7f20>
+    81b0:	114f883a 	add	r7,r2,r5
+    81b4:	39c00017 	ldw	r7,0(r7)
+    81b8:	110d883a 	add	r6,r2,r4
+    81bc:	10800104 	addi	r2,r2,4
+    81c0:	31c00015 	stw	r7,0(r6)
+    81c4:	003ff906 	br	81ac <_gp+0xffff7f48>
+    81c8:	00082540 	call	8254 <alt_dcache_flush_all>
+    81cc:	dfc00017 	ldw	ra,0(sp)
+    81d0:	dec00104 	addi	sp,sp,4
+    81d4:	00082581 	jmpi	8258 <alt_icache_flush_all>
+    81d8:	00c00074 	movhi	r3,1
+    81dc:	18e09904 	addi	r3,r3,-32156
+    81e0:	1907c83a 	sub	r3,r3,r4
+    81e4:	0005883a 	mov	r2,zero
+    81e8:	18bff726 	beq	r3,r2,81c8 <_gp+0xffff7f64>
+    81ec:	114f883a 	add	r7,r2,r5
+    81f0:	39c00017 	ldw	r7,0(r7)
+    81f4:	110d883a 	add	r6,r2,r4
+    81f8:	10800104 	addi	r2,r2,4
+    81fc:	31c00015 	stw	r7,0(r6)
+    8200:	003ff906 	br	81e8 <_gp+0xffff7f84>
+
+00008204 <alt_main>:
+    8204:	deffff04 	addi	sp,sp,-4
+    8208:	0009883a 	mov	r4,zero
+    820c:	dfc00015 	stw	ra,0(sp)
+    8210:	00082300 	call	8230 <alt_irq_init>
+    8214:	00082500 	call	8250 <alt_sys_init>
+    8218:	d1a00217 	ldw	r6,-32760(gp)
+    821c:	d1600317 	ldw	r5,-32756(gp)
+    8220:	d1200417 	ldw	r4,-32752(gp)
+    8224:	dfc00017 	ldw	ra,0(sp)
+    8228:	dec00104 	addi	sp,sp,4
+    822c:	000805c1 	jmpi	805c <main>
+
+00008230 <alt_irq_init>:
+    8230:	deffff04 	addi	sp,sp,-4
+    8234:	dfc00015 	stw	ra,0(sp)
+    8238:	000825c0 	call	825c <altera_nios2_gen2_irq_init>
+    823c:	00800044 	movi	r2,1
+    8240:	1001703a 	wrctl	status,r2
+    8244:	dfc00017 	ldw	ra,0(sp)
+    8248:	dec00104 	addi	sp,sp,4
+    824c:	f800283a 	ret
+
+00008250 <alt_sys_init>:
+    8250:	f800283a 	ret
+
+00008254 <alt_dcache_flush_all>:
+    8254:	f800283a 	ret
+
+00008258 <alt_icache_flush_all>:
+    8258:	f800283a 	ret
+
+0000825c <altera_nios2_gen2_irq_init>:
+    825c:	000170fa 	wrctl	ienable,zero
+    8260:	f800283a 	ret

@@ -1,0 +1,36 @@
+/*
+ * main.c
+ *
+ *  Created on: Mar 21, 2017
+ *      Author: parin
+ */
+
+
+
+#include "stdio.h"
+#include "io.h"
+#include "system.h"
+#include "stdint.h"
+#include "altera_avalon_pio_regs.h"
+
+int main(void)
+{
+	unsigned int a=1,b=10,c,ans;
+	int i;
+	//alt_u8 j,f;
+	//j=0;
+	//f=4;
+	//printf("%x",c);
+	c=1<<8;
+	IOWR(DAC_RAM_0_BASE,0,c);
+	printf("%d",c);
+	//for(i=0;i<30;i++)
+	//{
+		printf("asdsa");
+	//}
+	ans=IORD(DAC_RAM_0_BASE,0);
+	printf("\n%d",ans);
+	IOWR(0x11000,0,ans);
+
+}
+

@@ -1,0 +1,5 @@
+qsys : contains the qsys component along with corresponding NIOS II C code to read and display outputs from the two
+rams.
+
+Quartus_demo : Quartus project used for testing the avalon component. The code in the quartus_demo is commented
+for easy understanding. The timing quest analysis was done and snapshot of Fmax is included.

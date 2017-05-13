@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Fri Apr 28 03:34:52 2017
+Quartus Prime Version : 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+Revision Name : avalon_interface
+Top-level Entity Name : unsaved
+Family : Cyclone IV E
+Total logic elements : 1,738
+    Total combinational functions : 1,554
+    Dedicated logic registers : 929
+Total registers : 929
+Total pins : 2
+Total virtual pins : 0
+Total memory bits : 44,288
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

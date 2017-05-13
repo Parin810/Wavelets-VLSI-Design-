@@ -1,0 +1,641 @@
+$date
+  Mon May 01 05:44:58 2017
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$var reg 1 ! clk $end
+$var reg 1 " start $end
+$var reg 1 # clk_write $end
+$var reg 8 $ ca[7:0] $end
+$var reg 8 % ch[7:0] $end
+$var reg 1 & read1 $end
+$var reg 1 ' write1 $end
+$var reg 6 ( address1[5:0] $end
+$var reg 16 ) readdata1[15:0] $end
+$var reg 8 * writedata1[7:0] $end
+$var reg 1 + ready $end
+$var reg 8 , data_out[7:0] $end
+$scope module uut6 $end
+$var reg 1 - clk $end
+$var reg 1 . start $end
+$var reg 8 / ca[7:0] $end
+$var reg 8 0 ch[7:0] $end
+$var reg 1 1 read_in $end
+$var reg 6 2 address_in[5:0] $end
+$var reg 16 3 readdata1[15:0] $end
+$var reg 8 4 writedata1[7:0] $end
+$var reg 1 5 clk_write $end
+$var reg 1 6 ready $end
+$var reg 8 7 dout_hp[7:0] $end
+$var reg 8 8 dout_lp[7:0] $end
+$var reg 8 9 ca1[7:0] $end
+$var reg 8 : ch1[7:0] $end
+$var reg 8 ; cv1[7:0] $end
+$var reg 8 < cd1[7:0] $end
+$var reg 8 = out_hp_1[7:0] $end
+$var reg 8 > out_lp_1[7:0] $end
+$var reg 8 ? din[7:0] $end
+$var reg 1 @ delayed_clk $end
+$var reg 8 A data_in[7:0] $end
+$var reg 1 B reset $end
+$var reg 1 C read_row $end
+$var reg 1 D data_stored $end
+$var reg 1 E out_clear $end
+$var reg 1 F status $end
+$comment state_pass is not handled $end
+$var reg 1 G ready1 $end
+$var reg 1 H clk_out $end
+$scope module data_controller $end
+$var reg 1 I clk $end
+$var reg 1 J start $end
+$comment state is not handled $end
+$var reg 1 K read_row $end
+$var reg 6 L address_in[5:0] $end
+$var reg 16 M data[15:0] $end
+$var reg 1 N status $end
+$var reg 8 O address2[7:0] $end
+$var reg 8 P address[7:0] $end
+$var reg 8 Q address3[7:0] $end
+$var reg 8 R readdata[7:0] $end
+$var reg 8 S writedata[7:0] $end
+$var reg 8 T readdata2[7:0] $end
+$var reg 8 U writedata2[7:0] $end
+$var reg 8 V readdata3[7:0] $end
+$var reg 8 W writedata3[7:0] $end
+$var reg 1 X read_en $end
+$var reg 1 Y read2 $end
+$var reg 1 Z read3 $end
+$var reg 1 [ write3 $end
+$var reg 1 \ write2 $end
+$var reg 1 ] write_en $end
+$var reg 1 ^ reset $end
+$var reg 4 _ counter[3:0] $end
+$var reg 4 ` counter1[3:0] $end
+$var reg 4 a delay[3:0] $end
+$var reg 8 b dout_hp[7:0] $end
+$var reg 8 c dout_lp[7:0] $end
+$var reg 8 d data_in[7:0] $end
+$var reg 1 e switch $end
+$var reg 1 f in_process $end
+$var reg 4 g row_pixel_count[3:0] $end
+$var reg 4 h total_pixel_count[3:0] $end
+$scope module ram $end
+$var reg 1 i clk $end
+$var reg 1 j read $end
+$var reg 1 k write $end
+$var reg 8 l writedata[7:0] $end
+$var reg 8 m readdata[7:0] $end
+$var reg 8 n address[7:0] $end
+$comment tram is not handled $end
+$upscope $end
+$scope module filter_1 $end
+$var reg 1 o clk $end
+$var reg 8 p din[7:0] $end
+$var reg 8 q dout_lp[7:0] $end
+$var reg 8 r dout_hp[7:0] $end
+$comment data_pipe is not handled $end
+$upscope $end
+$scope module outputram1 $end
+$var reg 1 s clk $end
+$var reg 1 t read $end
+$var reg 1 u write $end
+$var reg 8 v writedata[7:0] $end
+$var reg 8 w readdata[7:0] $end
+$var reg 8 x address[7:0] $end
+$comment tram is not handled $end
+$upscope $end
+$scope module outputram2 $end
+$var reg 1 y clk $end
+$var reg 1 z read $end
+$var reg 1 { write $end
+$var reg 8 | writedata[7:0] $end
+$var reg 8 } readdata[7:0] $end
+$var reg 8 !" address[7:0] $end
+$comment tram is not handled $end
+$upscope $end
+$upscope $end
+$scope module fsm $end
+$var reg 1 "" clk $end
+$var reg 1 #" start $end
+$var reg 1 $" reset $end
+$var reg 1 %" status $end
+$var reg 1 &" data_stored $end
+$var reg 1 '" ready $end
+$var reg 1 (" read_row $end
+$var reg 1 )" out_clear $end
+$comment state is not handled $end
+$comment next_state is not handled $end
+$comment present_state is not handled $end
+$var reg 4 *" row_pixel_count[3:0] $end
+$var reg 4 +" total_pixel_count[3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+0!
+0"
+U#
+bUUUUUUUU $
+bUUUUUUUU %
+U&
+U'
+bUUUUUU (
+b0000000000000000 )
+bUUUUUUUU *
+U+
+bUUUUUUUU ,
+0-
+0.
+bUUUUUUUU /
+bUUUUUUUU 0
+U1
+bUUUUUU 2
+b0000000000000000 3
+bUUUUUUUU 4
+U5
+U6
+bUUUUUUUU 7
+bUUUUUUUU 8
+bUUUUUUUU 9
+bUUUUUUUU :
+bUUUUUUUU ;
+bUUUUUUUU <
+bUUUUUUUU =
+bUUUUUUUU >
+bUUUUUUUU ?
+U@
+bUUUUUUUU A
+0B
+0C
+UD
+UE
+UF
+0G
+UH
+0I
+0J
+0K
+bUUUUUU L
+b0000000000000000 M
+UN
+b00000000 O
+b00000000 P
+b00000000 Q
+bZZZZZZZZ R
+b00000000 S
+bUUUUUUUU T
+b00000000 U
+bUUUUUUUU V
+b00000000 W
+0X
+0Y
+0Z
+0[
+0\
+0]
+0^
+b0000 _
+b0000 `
+b0000 a
+b00000000 b
+b00000000 c
+b00000000 d
+0e
+0f
+b0000 g
+b0000 h
+0i
+0j
+0k
+b00000000 l
+bZZZZZZZZ m
+b00000000 n
+0o
+b00000000 p
+b00000000 q
+b00000000 r
+0s
+0t
+0u
+b00000000 v
+bUUUUUUUU w
+b00000000 x
+0y
+0z
+0{
+b00000000 |
+bUUUUUUUU }
+b00000000 !"
+0""
+0#"
+0$"
+U%"
+U&"
+0'"
+0("
+U)"
+b0000 *"
+b0000 +"
+#20000000
+1!
+1-
+0E
+1I
+1i
+1o
+1s
+1y
+1""
+0)"
+#40000000
+0!
+1"
+0-
+1.
+0I
+1J
+0i
+0o
+0s
+0y
+0""
+1#"
+#60000000
+1!
+1-
+1I
+1i
+1o
+1s
+1y
+1""
+#80000000
+0!
+0-
+0I
+0i
+0o
+0s
+0y
+0""
+#100000000
+1!
+1-
+1I
+b00000001 P
+b00000001 R
+1X
+b0001 _
+b00000001 d
+b0001 g
+1i
+1j
+b00000001 m
+b00000001 n
+1o
+b00000001 p
+1s
+1y
+1""
+#120000000
+0!
+0-
+0I
+0i
+0o
+0s
+0y
+0""
+#140000000
+1!
+1-
+1I
+b00000010 P
+b00000010 R
+b00000001 U
+b00000001 W
+b0010 _
+b00000001 b
+b00000001 c
+b00000010 d
+1f
+b0010 g
+1i
+b00000010 m
+b00000010 n
+1o
+b00000010 p
+b00000001 q
+b00000001 r
+1s
+b00000001 v
+1y
+b00000001 |
+1""
+#160000000
+0!
+0-
+0I
+0i
+0o
+0s
+0y
+0""
+#180000000
+1!
+1-
+1I
+b00000001 O
+b00000011 P
+b00000001 Q
+b00000011 R
+b00000011 U
+1[
+1\
+b0011 _
+b0001 `
+b00000011 c
+b00000011 d
+b0011 g
+1i
+b00000011 m
+b00000011 n
+1o
+b00000011 p
+b00000011 q
+1s
+1u
+b00000011 v
+b00000001 x
+1y
+1{
+b00000001 !"
+1""
+#200000000
+0!
+0-
+0I
+0i
+0o
+0s
+0y
+0""
+#220000000
+1!
+1-
+1I
+b00000100 P
+b00000100 R
+b00000101 U
+b0100 _
+b0001 a
+b00000101 c
+b00000100 d
+b0100 g
+1i
+b00000100 m
+b00000100 n
+1o
+b00000100 p
+b00000101 q
+1s
+b00000101 v
+1y
+1""
+#240000000
+0!
+0-
+0I
+0i
+0o
+0s
+0y
+0""
+#260000000
+1!
+1-
+1I
+b00000010 O
+b00000101 P
+b00000010 Q
+b00000101 R
+b00000111 U
+b0101 _
+b0010 `
+b00000111 c
+b00000101 d
+b0101 g
+1i
+b00000101 m
+b00000101 n
+1o
+b00000101 p
+b00000111 q
+1s
+b00000111 v
+b00000010 x
+1y
+b00000010 !"
+1""
+#280000000
+0!
+0-
+0I
+0i
+0o
+0s
+0y
+0""
+#300000000
+1!
+1-
+1I
+b00000110 P
+b00000110 R
+b00001001 U
+b0110 _
+b0010 a
+b00001001 c
+b00000110 d
+b0110 g
+1i
+b00000110 m
+b00000110 n
+1o
+b00000110 p
+b00001001 q
+1s
+b00001001 v
+1y
+1""
+#320000000
+0!
+0-
+0I
+0i
+0o
+0s
+0y
+0""
+#340000000
+1!
+1-
+1I
+b00000011 O
+b00000111 P
+b00000011 Q
+b00000111 R
+b00001011 U
+b0111 _
+b0011 `
+b00001011 c
+b00000111 d
+b0111 g
+1i
+b00000111 m
+b00000111 n
+1o
+b00000111 p
+b00001011 q
+1s
+b00001011 v
+b00000011 x
+1y
+b00000011 !"
+1""
+#360000000
+0!
+0-
+0I
+0i
+0o
+0s
+0y
+0""
+#380000000
+1!
+1-
+1I
+b00001000 P
+b00001000 R
+b00001101 U
+b1000 _
+b0011 a
+b00001101 c
+b00001000 d
+b1000 g
+1i
+b00001000 m
+b00001000 n
+1o
+b00001000 p
+b00001101 q
+1s
+b00001101 v
+1y
+1""
+#400000000
+0!
+0-
+0I
+0i
+0o
+0s
+0y
+0""
+#420000000
+1!
+1-
+1I
+b00000100 O
+b00001001 P
+b00000100 Q
+b00001001 R
+b00001111 U
+b1001 _
+b0100 `
+b00001111 c
+b00001001 d
+b1001 g
+1i
+b00001001 m
+b00001001 n
+1o
+b00001001 p
+b00001111 q
+1s
+b00001111 v
+b00000100 x
+1y
+b00000100 !"
+1""
+#440000000
+0!
+0-
+0I
+0i
+0o
+0s
+0y
+0""
+#460000000
+1!
+1-
+1I
+b00001010 P
+b00001010 R
+b00010001 U
+b1010 _
+b0100 a
+b00010001 c
+b00001010 d
+b1010 g
+1i
+b00001010 m
+b00001010 n
+1o
+b00001010 p
+b00010001 q
+1s
+b00010001 v
+1y
+1""
+#480000000
+0!
+0-
+0I
+0i
+0o
+0s
+0y
+0""
+#500000000
+1!
+1-
+1I
+b00000101 O
+b00001011 P
+b00000101 Q
+b00001011 R
+b00010011 U
+b1011 _
+b0101 `
+b00010011 c
+b00001011 d
+b1011 g
+1i
+b00001011 m
+b00001011 n
+1o
+b00001011 p
+b00010011 q
+1s
+b00010011 v
+b00000101 x
+1y
+b00000101 !"
+1""

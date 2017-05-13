@@ -1,0 +1,6 @@
+01:28:59 **** Clean-only build of configuration Nios II for project dac_lut_test ****
+make clean 
+[dac_lut_test clean complete]
+
+01:28:59 Build Finished (took 217ms)
+

@@ -1,0 +1,156 @@
+$date
+  Tue Mar 21 22:04:26 2017
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$var reg 1 ! clk $end
+$var reg 1 " read $end
+$var reg 1 # write $end
+$var reg 32 $ writedata[31:0] $end
+$var reg 32 % readdata[31:0] $end
+$var reg 32 & addr[31:0] $end
+$var reg 1 ' resetn $end
+$scope module uut $end
+$var reg 1 ( clock $end
+$var reg 1 ) resetn $end
+$var reg 1 * read $end
+$var reg 1 + write $end
+$var reg 32 , writedata[31:0] $end
+$var reg 32 - readdata[31:0] $end
+$var reg 8 . to_dac_ram[7:0] $end
+$var reg 8 / from_dac_ram[7:0] $end
+$var reg 8 0 write_to_ram[7:0] $end
+$scope module ram_istance $end
+$var reg 1 1 clk $end
+$var reg 1 2 read $end
+$var reg 1 3 write $end
+$var reg 8 4 writedata[7:0] $end
+$var reg 8 5 readdata[7:0] $end
+$var reg 8 6 addr[7:0] $end
+$comment tram is not handled $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+1!
+0"
+0#
+b00000000000000000000000000000000 $
+b000000000000000000000000ZZZZZZZZ %
+b00000000000000000000000000000000 &
+0'
+1(
+0)
+0*
+0+
+b00000000000000000000000000000000 ,
+b000000000000000000000000ZZZZZZZZ -
+bUUUUUUUU .
+bZZZZZZZZ /
+b00000000 0
+11
+02
+03
+b00000000 4
+bZZZZZZZZ 5
+b00000000 6
+#50000000
+0!
+0(
+01
+#70000000
+b00000000000100010000000000010001 $
+b00000000000000000000000000000001 &
+b00000000000100010000000000010001 ,
+b00010001 0
+b00010001 4
+#100000000
+1!
+1(
+11
+#150000000
+0!
+0(
+01
+#170000000
+#200000000
+1!
+1(
+11
+#250000000
+0!
+0(
+01
+#270000000
+#300000000
+1!
+1(
+11
+#350000000
+0!
+0(
+01
+#390000000
+1"
+b00000000000000000000000000000011 %
+1*
+b00000000000000000000000000000011 -
+b00000011 /
+12
+b00000011 5
+#400000000
+1!
+1(
+11
+#450000000
+0!
+0(
+01
+#500000000
+1!
+1(
+11
+#550000000
+0!
+0(
+01
+#600000000
+1!
+1(
+11
+#650000000
+0!
+0(
+01
+#700000000
+1!
+1(
+11
+#750000000
+0!
+0(
+01
+#800000000
+1!
+1(
+11
+#850000000
+0!
+0(
+01
+#900000000
+1!
+1(
+11
+#950000000
+0!
+0(
+01
+#1000000000
+1!
+1(
+11

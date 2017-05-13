@@ -1,0 +1,6 @@
+01:28:06 **** Clean-only build of configuration Nios II for project dac_ram_lut_bsp ****
+make clean 
+[BSP clean complete]
+
+01:28:08 Build Finished (took 2s.176ms)
+

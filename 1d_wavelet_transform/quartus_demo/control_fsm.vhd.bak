@@ -1,0 +1,76 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+use work.defs.all;
+
+entity control_fsm is
+port (clk,start,reset : in std_logic; status,data_stored: in std_logic; ready,read_row,out_clear : out std_logic; state : out smstate);
+end control_fsm;
+
+
+architecture main_arch of control_fsm is
+--type smstate is (idle,compute,row_done,waiting,done);
+signal next_state, present_state : smstate := idle;
+signal row_pixel_count : unsigned(3 downto 0):= "0000"; --keeps count of pixels in one row
+signal total_pixel_count : unsigned(3 downto 0) := "0000"; --keeps count of overall pixels ( 16 in this example)
+
+begin
+--synchronous process
+process(clk,reset)
+begin
+if reset='1' then
+	present_state <= idle;
+elsif clk'event and clk='1' then
+	present_state <= next_state;
+end if;
+end process;
+
+state <= present_state;
+
+Process(present_state,status,start,row_pixel_count)
+begin
+case present_state is
+when idle => out_clear <='1'; if start = '1' then next_state <= compute; else next_state <= idle; end if;
+
+when compute => 
+	out_clear<='0';
+	--if row_pixel_count = "0100" then 
+		--read_row <= '0';
+		--row_pixel_count <= "0000";
+	--else
+		--read_row <= '1';
+	--end if;
+	if status = '1' then
+		next_state <= row_done;
+	else
+		next_state <= compute;
+	end if;
+	
+when row_done =>
+	ready <= '1'; 
+	read_row <= '1';
+	-- if data_stored = '1' then	
+		-- next_state <= compute;
+		-- ready <= '0';
+	-- else
+		-- next_state <= row_done;
+	-- end if;
+	
+when others => next_state <= idle;
+
+end case;
+
+end process;
+
+end architecture main_arch;
+
+	
+	
+ 
+
+
+
+
+
+
+

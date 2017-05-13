@@ -1,0 +1,39 @@
+/*
+ * main.c
+ *
+ *  Created on: Mar 21, 2017
+ *      Author: parin
+ */
+
+
+
+#include "stdio.h"
+#include "io.h"
+#include "system.h"
+#include "stdint.h"
+#include "altera_avalon_pio_regs.h"
+
+int main(void)
+{
+	unsigned int a=0,b=10,c,ans;
+	int i;
+	alt_u8 data_in=0,addres_r=1;
+	alt_u32 composite;
+	composite=a<<16 + (addres_r << 8) + data_in;
+	c=0;
+	for ( i =0; i<8; i++)
+	{
+		IOWR(DAC_RAM_0_BASE,0,composite);
+		printf("\n%d",composite);
+		ans=IORD(DAC_RAM_0_BASE,0);
+		printf("\n%d",ans);
+		c++;
+	}
+	//IOWR(DAC_RAM_0_BASE,0,c);
+
+	//ans=IORD(DAC_RAM_0_BASE,0);
+	//printf("\n%d",ans);
+	//IOWR(0x11000,0,ans);
+
+}
+

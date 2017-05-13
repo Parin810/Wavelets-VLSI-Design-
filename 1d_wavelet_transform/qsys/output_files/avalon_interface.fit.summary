@@ -1,0 +1,16 @@
+Fitter Status : Successful - Fri Apr 28 03:35:10 2017
+Quartus Prime Version : 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+Revision Name : avalon_interface
+Top-level Entity Name : unsaved
+Family : Cyclone IV E
+Device : EP4CE22F17C6
+Timing Models : Final
+Total logic elements : 1,668 / 22,320 ( 7 % )
+    Total combinational functions : 1,560 / 22,320 ( 7 % )
+    Dedicated logic registers : 921 / 22,320 ( 4 % )
+Total registers : 921
+Total pins : 2 / 154 ( 1 % )
+Total virtual pins : 0
+Total memory bits : 44,288 / 608,256 ( 7 % )
+Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

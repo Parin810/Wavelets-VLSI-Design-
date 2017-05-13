@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Mon May 01 01:21:08 2017
+Quartus Prime Version : 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+Revision Name : dac_ram
+Top-level Entity Name : unsaved
+Family : Cyclone IV E
+Total logic elements : 1,743
+    Total combinational functions : 1,569
+    Dedicated logic registers : 910
+Total registers : 910
+Total pins : 10
+Total virtual pins : 0
+Total memory bits : 273,408
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
